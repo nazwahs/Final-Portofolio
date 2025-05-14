@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <p id="greeting"></p>
+    <header>
+        <div class="container">
+            <nav aria-label="primary navigation">
+                <div class="logo" tabindex="0">My Portofolio</div>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container" tabindex="0">
+    <section id="about" class="about-me" aria-label="About Me section">
+        <h1>💕💕Hallo siss, Saya <strong>Nazwa Hasibuan</strong></h1>
+        <p>
+            Selamat datang disitus web portofolio pribadi saya! saya adalah seorang <strong>pelajar SMK Plus Nusantara</strong></p>
+</section>
+<section id="skills" aria-label="skills section">
+    <h2>👍SKILLS</h2>
+    <div class="skills-list" role="list">
+        <span class="skill" role="listitems">🧺HTML</span>
+        <span class="skill" role="listitems">🪺CSS</span>
+        <span class="skill" role="listitems">🍳JavaScript</span>
+    </div>
+</section>
+<section id="projects" aria-label="project-section">
+    <h2>🌍projects</h2>
+    <div class="project-list">
+
+     <article class="project-item" tabindex="0">
+         <h3>🌹Portofolio Website</h3>
+         <p>
+            website pribadi yang menampilkan profil, keterampilan, dan proyek. Dibangun menggunakan HTML, CSS, dan JavaScript.
+        </p>
+        <a href="portofolio/index.html" class="project-link" target="_blank" rel="noopener">💥 Lihat Project</a>
+     </article>
+
+     <article class="project-item" tabindex="0">
+        <h3>🍒 To-Do List</h3>
+        <p>
+            Aplikasi daftar tugas interaktif untuk menambah, menghapus tugas yang sudah selesai dikerjakan.
+        </p>
+        <a href="to do list/index.html" class="project-link" target="_blank" rel="noopener">💥Lihat Project</a>
+     </article>
+
+     <article class="project-item" tabindex="0">
+        <h3>💐Quiz Game</h3>
+        <p>
+            Game kuis sederhana dengan pertanyaan pilihan ganda dan sistem penilaian. Dibuat dengan JavaScript.
+        </p>
+        <a href="quis game/index.html" class="project-link" target="_blank" rel="noopener">💥Lihat Project</a>
+     </article>
+    </div>
+</section>
+
+<section id="contact" aria-label="Contact section">
+    <h2>🏳️Contact Me</h2>
+    <form id="name-form" novalidate>
+
+        <label for="name"> Nama Lengkap</label>
+        <input type="text" id="name" name="name" placeholder="Nama Anda" aria-label="Nama Anda" required/>
+        <div class="error" id="name-error"></div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email Anda" aria-label="Email Anda" required/>
+        <div class="error" id="email-error"></div>
+
+        <label for="massage">Pesan</label>
+        <textarea  id="massage" name="massage" rows="4" placeholder="Tulis pesan anda. . ." aria-label="Pesan Anda" required></textarea>
+        <div class="error" id="massage-error"></div>
+
+        <button type="submit" aria-label="Kirim pesan">💭 Kirim pesan</button>
+        <p class="succes-msg" id="succes-massage" aria-live="polite"></p>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 Nazwa Hasibuan <span>SMK Plus Pelita Nusantara</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

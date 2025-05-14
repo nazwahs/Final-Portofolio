@@ -1,0 +1,174 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background-color: #e7acc4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+#greeting {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #bf5f85;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul  {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul a:hover{
+    color: #6d4153;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill {
+  background-color: #e0f7fa;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #60424e;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  background-color: #0056b3;
+}
+
+#name-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#name-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#name-form input,
+#name-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical;
+  width: 100%;
+}
+
+#name-form button {
+  background-color: #bf5f85;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#name-form button:hover {
+  background-color: #e7acc4;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.success-msg {
+  color: #7ba084;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  padding: 20px 0;
+}
